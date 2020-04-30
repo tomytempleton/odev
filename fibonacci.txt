@@ -1,0 +1,7 @@
+fib_list = [1,1]
+for i in range(1,100):
+  fibnum = fib_list[i-1] + fib_list[i]
+  fib_list.append(fibnum)
+  if fibnum == 55:
+    break 
+print(f"fibonacci numbers in range 55 are {fib_list}")
