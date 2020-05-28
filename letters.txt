@@ -1,0 +1,12 @@
+sentence = input ("Please enter a sentence: ")
+letters = list(sentence)
+dictionary = {}
+
+for i in letters:
+    count = 0
+    for x in range(len(letters)):
+        if i == letters[x]: 
+            count = count+1
+    dictionary.__setitem__(i, count) 
+
+print(dictionary)
